@@ -1,0 +1,28 @@
+const list1 = ['Arjun', 'Adwait', 'Swapnil', 'Amit', 'Vishal', 'Adnan'];
+const list2 = ['Adwait', 'Laxman', 'Amit', 'Adnan', 'Nitin', 'Gaurav'];
+
+const uniqueUsersInList1NotInList2 = [];
+const uniqueUsersInList2NotInList1 = [];
+const uniqueUsersInBothList1AndList2 = [];
+
+for (let i of list1) {
+    if (!list2.includes(i)) {
+        uniqueUsersInList1NotInList2.push(i);
+    }
+}
+
+for (let j of list2) {
+    if (!list1.includes(j)){
+        uniqueUsersInList2NotInList1.push(j);
+    }
+}
+
+for (let k of list1) {
+    if (list2.includes(k)){
+        uniqueUsersInBothList1AndList2.push(k);
+    }
+}
+
+console.log(uniqueUsersInList1NotInList2);
+console.log(uniqueUsersInList2NotInList1);
+console.log(uniqueUsersInBothList1AndList2);
