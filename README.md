@@ -1,6 +1,7 @@
 # uniqueUsersList-JavaScript-Assignment
 
 Create a Javascript application :
+
 Below are two list of User
 
 List1=[‘Arjun’, ‘Adwait’, ‘Swapnil’,’Amit’, ‘Vishal’, ‘Adnan’]
